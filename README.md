@@ -1,4 +1,4 @@
-# Adarsh G Krishnan's Portfolio
+# My Portfolio
 
 Welcome to my portfolio website! I'm Adarsh G Krishnan, a passionate backend developer with expertise in C, C++, Java and Python, as well as experience in AI/ML. This website showcases my skills, projects, and achievements in the field of software development.
 
