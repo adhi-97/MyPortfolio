@@ -71,12 +71,23 @@
             border-radius: 5px;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
         .main {
             padding: 2rem 0;
+        }
+        .tile {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+        .tile:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
         h2 {
             color: #333;
@@ -84,11 +95,12 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
-        .projects {
-            margin: 2rem 0;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
-        .project-item {
-            margin-bottom: 1rem;
+        ul li {
+            margin-bottom: 0.5rem;
         }
         a {
             color: #1a73e8;
@@ -103,14 +115,17 @@
             padding: 1rem;
             text-align: center;
         }
-        .section {
-            margin: 2rem 0;
-        }
-        .section div {
-            margin-bottom: 1.5rem;
-        }
-        .section h3 {
-            margin: 0;
+        @media (max-width: 768px) {
+            .nav-bar a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+            .tile {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -135,12 +150,12 @@
     </div>
 
     <div class="container main">
-        <section id="about" class="section">
+        <section id="about" class="tile">
             <h2>About Me</h2>
             <p>I'm a backend developer with a strong foundation in C, C++, Java, and Python, and a keen interest in AI/ML technologies. I enjoy solving complex problems and building scalable solutions. My portfolio highlights my experience in various projects, demonstrating my technical skills and innovative approach.</p>
         </section>
 
-        <section id="experience" class="section">
+        <section id="experience" class="tile">
             <h2>Experience</h2>
             <div>
                 <h3>Assistant Manager - Technology, SMFG India Credit Co. Ltd</h3>
@@ -160,7 +175,7 @@
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="tile">
             <h2>Skills</h2>
             <ul>
                 <li><strong>Technical Skills:</strong> C | C++ | JAVA | Python | SQL | OOPS | Git | AWS | Threads | Sockets | Linux</li>
@@ -168,19 +183,25 @@
             </ul>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="tile">
             <h2>Projects</h2>
             <div>
                 <h3><a href="#">Few Shot Prediction on Brain Signals</a></h3>
-                <p>- Identified potential to improve BCI feasibility in low-data environments, cutting data preparation costs by 80%.<br>- Revamped a few-shot based EEG signal pipeline, slashing the training cycle by 10x with a 5% higher F1 score.</p>
+                <ul>
+                    <li>Identified potential to improve BCI feasibility in low-data environments, cutting data preparation costs by 80%.</li>
+                    <li>Revamped a few-shot based EEG signal pipeline, slashing the training cycle by 10x with a 5% higher F1 score.</li>
+                </ul>
             </div>
             <div>
                 <h3><a href="#">FileDirect: A console-based file manager</a></h3>
-                <p>- Developed a C-based two-tier model using TCP sockets to simulate Google Doc-like system with 4 operations.<br>- Integrated a collaborative privilege access control feature that handles up to 5 concurrent client connections.</p>
+                <ul>
+                    <li>Developed a C-based two-tier model using TCP sockets to simulate Google Doc-like system with 4 operations.</li>
+                    <li>Integrated a collaborative privilege access control feature that handles up to 5 concurrent client connections.</li>
+                </ul>
             </div>
         </section>
 
-        <section id="education" class="section">
+        <section id="education" class="tile">
             <h2>Education</h2>
             <div>
                 <h3>M.Tech, Computer Science</h3>
@@ -196,7 +217,7 @@
             </div>
         </section>
 
-        <section id="internships" class="section">
+        <section id="internships" class="tile">
             <h2>Internships</h2>
             <div>
                 <h3>Machine Learning Intern, MadLabs Inc.</h3>
@@ -208,7 +229,7 @@
             </div>
         </section>
 
-        <section id="awards" class="section">
+        <section id="awards" class="tile">
             <h2>Awards and Achievements</h2>
             <div>
                 <h3>Outstanding for FY 23-24 (Top 5% of total workforce)</h3>
@@ -220,7 +241,7 @@
             </div>
         </section>
 
-        <section id="responsibilities" class="section">
+        <section id="responsibilities" class="tile">
             <h2>Positions of Responsibility</h2>
             <div>
                 <h3>Teaching Assistant - PDS Lab</h3>
@@ -234,7 +255,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="tile">
             <h2>Contact</h2>
             <p>Feel free to reach out to me through the following channels:</p>
             <ul>
@@ -247,7 +268,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Adarsh G Krishnan. All rights reserved.</p>
+        <p>&copy; 2024 Adarsh G Krishnan. All rights reserved. Licensed under the <a href="LICENSE">MIT License</a>.</p>
     </footer>
 </body>
 </html>
