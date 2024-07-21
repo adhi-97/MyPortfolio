@@ -22,10 +22,12 @@ I'm a backend developer with a strong foundation in C, C++, Java and Python, and
 ## Projects
 
 ### [Few Shot Prediction on Brain Signals](#)
-Description of the project, technologies used, and key achievements.
+- Identified potential to improve BCI feasibility in low-data environments, cutting data preparation costs by 80%
+- Revamped a few-shot based EEG signal pipeline, slashing the training cycle by 10x with a 5% higher F1 score
 
 ### [FileDirect: A console-based file manager](#)
-Description of the project, technologies used, and key achievements.
+- Developed a C-based two-tier model using TCP sockets to simulate Google Doc-like system with 4 operations
+- Integrated a collaborative privilege access control feature that handles up to 5 concurrent client connections
 
 *More projects can be found in the Projects section of the website.*
 
